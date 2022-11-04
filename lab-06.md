@@ -6,6 +6,7 @@ TEAM NAME
 
 ``` r
 library(tidyverse) 
+library(lubridate)
 ```
 
 ### Exercise 1
@@ -41,8 +42,19 @@ Covid_cases <- tribble(
 ### Exercise 2
 
 ``` r
-# add code here
+Covid_cases %>%
+  mutate(Date = dmy (Date)) %>%
+ggplot(aes(x = Date))+
+  geom_line(aes(y = Masks),
+            color = "red")+
+  geom_line(aes(y = No_Masks),
+            color = "blue")+
+  labs(y = "Cases",
+       title = "Kansas COVID 7-day Rolling Average of Daily Cases",
+       subtitle = "Per 100k of population")
 ```
+
+![](lab-06_files/figure-gfm/better-viz-1.png)<!-- -->
 
 ### Exercise 3
 

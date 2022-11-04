@@ -8,6 +8,7 @@ output: github_document
 
 ```{r load-packages, message=FALSE}
 library(tidyverse) 
+library(lubridate)
 ```
 
 
@@ -45,7 +46,16 @@ Covid_cases <- tribble(
 ### Exercise 2
 
 ```{r better-viz}
-# add code here
+Covid_cases %>%
+  mutate(Date = dmy (Date)) %>%
+ggplot(aes(x = Date))+
+  geom_line(aes(y = Masks),
+            color = "red")+
+  geom_line(aes(y = No_Masks),
+            color = "blue")+
+  labs(y = "Cases",
+       title = "Kansas COVID 7-day Rolling Average of Daily Cases",
+       subtitle = "Per 100k of population")
 ```
 
 
