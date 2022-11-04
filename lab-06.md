@@ -51,7 +51,7 @@ ggplot(aes(x = Date))+
             color = "blue")+
   labs(y = "Cases",
        title = "Kansas COVID 7-day Rolling Average of Daily Cases",
-       subtitle = "Per 100k of population")
+       subtitle = "Per 100k of population; blue: no-mask counties, red: mask counties")
 ```
 
 ![](lab-06_files/figure-gfm/better-viz-1.png)<!-- -->
