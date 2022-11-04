@@ -58,7 +58,10 @@ ggplot(aes(x = Date))+
 
 ### Exercise 3
 
-*Add your narrative here.*
+*The scale is a lot clearer to read and much easier to compare between
+the no mask and mask data. As well the graph is now clearly labeled
+which makes understanding the data quicker. As well reducing the number
+of dates shown illustrates the change in the data over time better. *
 
 ### Exercise 4
 
