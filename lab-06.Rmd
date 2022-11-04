@@ -66,4 +66,4 @@ ggplot(aes(x = Date))+
 
 ### Exercise 4
 
-*Add your narrative here.*
+*Based on the data provided, it is clear that counties with a mask mandate reported higher numbers of COVID cases than those without a mask mandate.  However, this relationship may be affected by other factors, such as population density and the amount of testing being done in each county.  Counties without a mask mandate may be more likely to have a lower population density, as well as less testing, which could explain these results.*
